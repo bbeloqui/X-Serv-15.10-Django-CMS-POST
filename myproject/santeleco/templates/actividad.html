@@ -1,0 +1,17 @@
+<html>
+<body bgcolor="yellow">
+
+    <h1><font color="black">APUNTADOS</font></h1>
+
+        {{ context.contenido | safe }}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <br>Nombre: <input type="text" name="nombre">
+        <br/>Grado: <input type="text" name="grado">
+        <br><input type="submit" value="Apuntarme">
+    </form>
+
+    {{ context.loggeado | safe }}
+
+</body>
+</html>

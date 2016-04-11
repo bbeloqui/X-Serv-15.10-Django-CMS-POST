@@ -1,0 +1,16 @@
+<html>
+<body bgcolor="yellow">
+
+    <h1><font color="black">ACTIVIDADES</font></h1>
+
+        {{ context.contenido | safe }}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <br>Nombre: <input type="text" name="nombre">
+        <br/>Horario: <input type="text" name="horario">
+        <br><input type="submit" value="Crear">
+    </form>
+
+</body>
+</html>
